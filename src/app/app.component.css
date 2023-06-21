@@ -1,0 +1,47 @@
+.fondo-pagina {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+.bandera {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  height: auto;
+}
+
+.enlace {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.enlace:hover {
+  background-color: #ddd;
+}
+
+.content {
+  flex: 1;
+}

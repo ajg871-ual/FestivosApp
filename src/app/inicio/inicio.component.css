@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: "Comic Sans MS", cursive;
+}
+
+.calendario {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.dia {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 150px; /* Ajusta la altura deseada */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dia:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fecha {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nombre {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #777;
+}
+
+.rojo {
+  color: red;
+}
+
+.amarillo {
+  color: yellow;
+}
+
+/* Añade esta regla para ajustar el ancho de las cajas */
+@media (min-width: 768px) {
+  .calendario {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+

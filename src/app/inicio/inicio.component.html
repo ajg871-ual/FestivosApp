@@ -1,0 +1,13 @@
+<STYLE>A {text-decoration: none;} </STYLE>
+<div class="container">
+  <h1 class="titulo">
+    <span class="rojo">Festivos </span> <span class="amarillo">en</span> <span class="rojo"> España</span>
+  </h1>
+
+  <div class="calendario">
+    <a class="dia" *ngFor="let festivo of festivos; let i = index" [routerLink]="['/festivo', i]">
+      <div class="fecha">{{ festivo.date.iso }}</div>
+      <div class="nombre">{{ festivo.name | titlecase }}</div>
+    </a>
+  </div>
+</div>
